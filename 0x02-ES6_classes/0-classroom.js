@@ -1,12 +1,13 @@
 /**
- * Retrieves a list of students.
- * @author yoseph tapano <https://github.com/Jo2831>
- * @returns {{id: Number, firstName: String, location: String}[]}
+ * Represents a class room.
  */
-export default function getListStudents() {
-  return [
-    { id: 1, firstName: 'Guillaume', location: 'San Francisco' },
-    { id: 2, firstName: 'James', location: 'Columbia' },
-    { id: 5, firstName: 'Serena', location: 'San Francisco' },
-  ];
+export default class ClassRoom {
+  /**
+   * Creates a new @see {@link ClassRoom}.
+   * @param {Number} maxStudentsSize - The maximum number of
+   * students in the class.
+   */
+  constructor(maxStudentsSize) {
+    this._maxStudentsSize = maxStudentsSize;
+  }
 }
