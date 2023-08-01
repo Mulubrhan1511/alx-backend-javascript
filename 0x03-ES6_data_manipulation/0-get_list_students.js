@@ -1,6 +1,5 @@
 /**
  * Retrieves a list of students.
- * @author yoseph tapano <https://github.com/Jo2831>
  * @returns {{id: Number, firstName: String, location: String}[]}
  */
 export default function getListStudents() {
